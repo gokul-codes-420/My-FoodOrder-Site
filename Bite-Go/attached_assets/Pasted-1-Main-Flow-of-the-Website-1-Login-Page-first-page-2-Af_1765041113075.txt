@@ -1,0 +1,298 @@
+1. Main Flow of the Website
+	1.	Login Page (first page)
+	2.	After login → Home Page
+	3.	From Home → Menu (Indian Food Gallery) with 20+ food images
+	4.	User adds items to Cart
+	5.	User goes to Cart Page
+	6.	User proceeds to Order / Checkout Page
+	7.	User chooses Pay Online or Scan QR Code
+	8.	After payment → Order Success / Confirmation Page
+
+⸻
+
+2. Pages & Sections Overview
+	•	Login / Signup Page
+	•	Home Page
+	•	Top Navbar (visible after login on all pages)
+	•	Menu / Food Images Section (20+ items)
+	•	Cart Page
+	•	Order / Checkout Page
+	•	Order Success Page
+	•	(Optional) Profile / My Orders Page
+	•	Footer
+
+⸻
+
+3. Login / Signup Page (First Page)
+
+User must login before seeing menu.
+
+Elements:
+	•	Website logo + name at the top
+	•	Login box:
+	•	Email / Phone number
+	•	Password
+	•	“Login” button
+	•	“Forgot password?” link
+	•	Signup option:
+	•	Small text: “New user? Create an account”
+	•	“Sign Up” button → opens signup form:
+	•	Name
+	•	Email / Phone
+	•	Password
+	•	Confirm Password
+	•	“Create Account” button
+
+After successful login → redirect to Home Page.
+
+⸻
+
+4. Top Navbar (after login)
+
+Visible on top of all pages (except login).
+
+Left side:
+	•	Logo + Website Name
+
+Center / Right side links:
+	•	Home
+	•	Menu
+	•	Offers (optional)
+	•	My Orders (optional)
+	•	Contact / Help
+	•	Cart (🛒 + item count) – e.g. “Cart (3)”
+	•	Profile / Logout (icon or dropdown)
+
+Behavior:
+	•	Clicking Menu → jumps to food images section
+	•	Clicking Cart → opens Cart page
+	•	Clicking My Orders → past orders list (optional)
+
+⸻
+
+5. Home Page Layout
+
+5.1 Hero Section
+	•	Big banner image of Indian food
+	•	Text:
+	•	Heading: “Order Delicious Indian Food Online”
+	•	Subtext: “Fresh, hot, delivered to your door.”
+	•	Buttons:
+	•	“View Menu”
+	•	“Start Order”
+
+5.2 Highlights Section
+
+Three or four small info boxes:
+	•	✅ Authentic Indian dishes
+	•	⚡ Fast delivery
+	•	💳 Online payment & QR
+	•	📍 Serving your area
+
+Button at bottom: “Browse All Dishes” → scroll to Menu section.
+
+⸻
+
+6. Menu / Food Images Section (20+ foods)
+
+This is the main section for ordering.
+
+6.1 Section Header
+	•	Title: “Indian Menu”
+	•	Optional filters:
+	•	All
+	•	Starters
+	•	Main Course
+	•	Breads
+	•	Desserts
+	•	Beverages
+
+6.2 Food Cards (Grid)
+
+Show foods in a grid (3–4 per row on desktop, 2 per row on mobile).
+
+Each food card includes:
+	•	Food Image
+	•	Food Name
+	•	Short description (1 line)
+	•	Price (e.g. ₹180)
+	•	Controls:
+	•	“Add to Cart” button
+	•	Optional: - 1 + quantity buttons
+
+6.3 Example List of 20+ Indian Dishes
+
+You can use items like:
+	1.	Butter Chicken
+	2.	Chicken Biryani
+	3.	Veg Biryani
+	4.	Paneer Tikka
+	5.	Palak Paneer
+	6.	Dal Makhani
+	7.	Chole Bhature
+	8.	Rajma Chawal
+	9.	Masala Dosa
+	10.	Idli Sambar
+	11.	Vada
+	12.	Samosa
+	13.	Tandoori Chicken
+	14.	Butter Naan
+	15.	Garlic Naan
+	16.	Plain Roti
+	17.	Pav Bhaji
+	18.	Vada Pav
+	19.	Pani Puri
+	20.	Gulab Jamun
+	21.	Rasgulla
+	22.	Jalebi
+	23.	Lassi (Sweet / Salted)
+	24.	Masala Chai
+
+📷 Important for images: don’t copy from Google images directly. Use:
+	•	Your own clicked photos, or
+	•	Free stock from Unsplash / Pexels / Pixabay (search “Indian food”).
+
+⸻
+
+7. Cart Page
+
+When user clicks “Add to Cart”, the item goes into Cart and Cart count updates.
+
+7.1 Cart Content Area
+
+For each item:
+	•	Small image (thumbnail)
+	•	Name of dish
+	•	Price per item
+	•	Quantity selector: - 2 +
+	•	Total for that item (Price × Quantity)
+	•	Remove button (🗑)
+
+7.2 Cart Summary Area
+
+On side or bottom:
+	•	Subtotal (sum of items)
+	•	Delivery charge (e.g. ₹40)
+	•	Taxes / GST (if applicable)
+	•	Grand Total: ₹XXXX
+
+Buttons:
+	•	“Continue Shopping” → back to Menu
+	•	“Proceed to Checkout” → go to Order / Payment section
+
+The cart data must be saved until order is completed or cleared.
+
+⸻
+
+8. Order / Checkout Page
+
+This is where user enters details and chooses payment.
+
+8.1 Customer Details Form
+
+Fields:
+	•	Full Name
+	•	Mobile Number
+	•	Full Address
+	•	City / Area (dropdown or text)
+	•	Pincode
+	•	Optional: “Delivery instructions” textbox
+
+8.2 Order Summary
+
+Show:
+	•	List of items (like Cart, but read-only)
+	•	Item total
+	•	Delivery charge
+	•	Final amount to pay
+
+8.3 Payment Options
+
+Show heading: “Choose Payment Method”
+
+Options (radio buttons):
+	•	( ) Pay Online (UPI/Card/NetBanking)
+	•	( ) Scan QR Code (UPI)
+
+If “Pay Online” is selected:
+	•	Show “Pay Now” button
+	•	This would connect to a payment gateway (Razorpay, Paytm, etc. – in real implementation).
+
+If “Scan QR Code” is selected:
+	•	Show QR Code image (your UPI or payment QR)
+	•	Show steps:
+	1.	Open your UPI app (GPay / PhonePe / Paytm etc.)
+	2.	Scan the QR code
+	3.	Pay the exact amount
+	•	Optional field:
+	•	“Enter Transaction ID / UPI Reference Number”
+	•	Optional: upload screenshot (for manual verification)
+
+8.4 Place Order Button
+
+Button: “Place Order”
+
+On click:
+	•	Check → all form fields filled
+	•	Check → payment method selected
+	•	Save:
+	•	User details
+	•	Cart items
+	•	Payment method (and transaction details, if QR)
+
+Then redirect to Order Success Page.
+
+⸻
+
+9. Order Success / Confirmation Page
+
+After a successful order:
+
+Show:
+	•	Big message: “Thank you! Your order has been placed.”
+	•	Order ID (e.g. #ORD12345)
+	•	Summary:
+	•	Items ordered
+	•	Total amount
+	•	Payment method
+	•	Delivery address
+	•	Estimated delivery time (e.g. 30–45 mins)
+
+Buttons:
+	•	“Back to Home”
+	•	“View My Orders” (if you implement order history)
+
+⸻
+
+10. Profile / My Orders Page (Optional)
+
+For logged-in user:
+	•	Show:
+	•	Name, phone, email
+	•	Past orders list:
+	•	Order ID
+	•	Date
+	•	Total amount
+	•	Status (Delivered / In Progress)
+	•	Option to:
+	•	Re-order same items (“Order Again”)
+	•	Edit profile details
+
+⸻
+
+11. Footer (Bottom of all pages)
+
+Footer content:
+	•	Quick Links:
+	•	Home
+	•	Menu
+	•	Contact
+	•	Terms & Conditions
+	•	Privacy Policy
+	•	Contact Info:
+	•	Phone number
+	•	Email
+	•	Social links:
+	•	Instagram, Facebook, etc.
+	•	Copyright:
+	•	“© 2025 [Your Brand Name]. All rights reserved.”
